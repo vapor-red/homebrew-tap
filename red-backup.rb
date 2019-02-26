@@ -28,7 +28,7 @@ class RedBackup < Formula
   end
 
   def exec_script
-    <<~EOS.undent
+    <<~EOS
     #!/bin/bash
     export GEM_HOME="#{HOMEBREW_PREFIX}/lib/red-backup/vendor"
     export DISABLE_BUNDLER_SETUP=1
