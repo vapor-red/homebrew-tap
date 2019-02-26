@@ -1,8 +1,13 @@
-require 'formula'
-
 class RedBackup < Formula
-  depends_on 'colorize' => :ruby
-  depends_on 'tty-prompt' => :ruby
+  resource "colorize" do
+    url "https://rubygems.org/downloads/colorize-0.8.1.gem"
+    sha256 "0ba0c2a58232f9b706dc30621ea6aa6468eeea120eb6f1ccc400105b90c4798c"
+  end
+
+  resource "tty-prompt" do
+    url "https://rubygems.org/downloads/tty-prompt-0.18.1.gem"
+    sha256 "95c9bc8d70c6cb5aed5ae09914069e3db28b495c52787d4976c71e3f7fd654f2"
+  end
 
   desc "Backup Vapor Red"
   url "https://red-scripts.ams3.digitaloceanspaces.com/red-backup-0.0.1.tar.gz"
