@@ -22,10 +22,9 @@ class RedBackup < Formula
     end
 
     rm_rf "vendor"
+    libexec.install Dir["*"]
     (bin/"red-backup").write(exec_script)
 
-    libexec.install Dir["*"]
-    bin.write_exec_script (libexec/"red-backup")
   end
 
   def exec_script
