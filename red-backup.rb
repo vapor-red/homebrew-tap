@@ -32,7 +32,7 @@ class RedBackup < Formula
     #!/bin/bash
     export GEM_HOME="#{HOMEBREW_PREFIX}/lib/red-backup/vendor"
     export DISABLE_BUNDLER_SETUP=1
-    exec ruby "#{libexec}/red-backup.rb" "$@"
+    exec ruby "#{libexec}/red-backup" "$@"
     EOS
   end
 end
