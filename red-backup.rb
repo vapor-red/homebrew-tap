@@ -1,3 +1,5 @@
+require 'formula'
+
 class RedBackup < Formula
   depends_on 'colorize' => :ruby
   depends_on 'tty-prompt' => :ruby
