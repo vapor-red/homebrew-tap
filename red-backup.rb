@@ -18,7 +18,7 @@ class RedBackup < Formula
     (lib/"red-backup/vendor").mkpath
     resources.each do |r|
       r.verify_download_integrity(r.fetch)
-      system("gem", "install", r.cached_download, "--no-documentation", "--install-dir", "#{lib}/red-backup/vendor")
+      system("gem", "install", r.cached_download, "--no-document", "--install-dir", "#{lib}/red-backup/vendor")
     end
 
     rm_rf "vendor"
